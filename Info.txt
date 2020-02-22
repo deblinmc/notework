@@ -1,0 +1,5 @@
+Informacion del proyecto
+-Desarrollado sobre PHP
+-Codeigniter???
+-Laravel???
+-Framework JS
