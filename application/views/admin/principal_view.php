@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PRINCIPA</title>
+	<title>PRINCIPAL</title>
 </head>
 <body>
 <div class="">
