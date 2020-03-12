@@ -13,6 +13,15 @@ class Trabajo extends CI_Controller {
 	}
 	public function index()
 	{
+		redirect('trabajo/principal');
+	}
+
+	public function mostrar_vista($direccion=null,$output = null)
+	{
+		$this->load->view($direccion,(array)$output);
+	}
+
+	public function principal(){
 		try{
 			$crud = new grocery_CRUD();
 
@@ -25,14 +34,5 @@ class Trabajo extends CI_Controller {
 		}catch(Exception $e){
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
 		}
-	}
-
-	public function mostrar_vista($direccion=null,$output = null)
-	{
-		$this->load->view($direccion,(array)$output);
-	}
-
-	public function principal(){
-		//$this->load->view('admin/principal_view');
 	}
 }
