@@ -10,7 +10,7 @@
         <title>Startmin - Bootstrap Admin Theme</title>
 
         <!-- Bootstrap Core CSS -->
-        <link href="<?=base_url()?>assets/css/bootstrap.min2.css" rel="stylesheet">
+        <link href="<?=base_url()?>assets/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- MetisMenu CSS -->
         <link href="<?=base_url()?>assets/css/metisMenu.min.css" rel="stylesheet">
