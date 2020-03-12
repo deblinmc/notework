@@ -33,6 +33,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <?php 
+foreach($css_files as $file): ?>
+    <link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
+<?php endforeach; ?>
+
     </head>
     <body>
 
@@ -370,6 +375,11 @@
                                 <!-- /.panel-body -->
                             </div>
                             <!-- /.panel -->
+                            <div class="panel panel-primary">
+                                <div style="padding: 10px">
+                                    <?php echo $output; ?>
+                                </div>
+                            </div>
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
@@ -861,5 +871,8 @@
         <!-- Custom Theme JavaScript -->
         <script src="<?=base_url()?>assets/js/startmin.js"></script>
 
+ <?php foreach($js_files as $file): ?>
+        <script src="<?php echo $file; ?>"></script>
+    <?php endforeach; ?>
     </body>
 </html>
