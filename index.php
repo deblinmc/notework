@@ -1,4 +1,5 @@
 <?php
+setlocale(LC_ALL, 'esp_ESP').': ';
 /**
  * CodeIgniter
  *

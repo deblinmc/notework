@@ -317,7 +317,10 @@ table.dataTable thead .sorting:after {
 }
 
 .huge {
-    font-size: 40px;
+    font-size: 28px;
+}
+.panel-huge{
+    padding: 5px !important;
 }
 
 .panel-green {

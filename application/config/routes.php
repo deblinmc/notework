@@ -50,5 +50,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'trabajo';
+
+$route['actividades'] = 'trabajo/actividades';
+$route['actividades/(:any)']='trabajo/actividades';
+$route['actividades/(:any)/(:any)']='trabajo/actividades';
+
+$route['centros'] = 'trabajo/centros';
+$route['centros/(:any)']='trabajo/centros';
+$route['centros/(:any)/(:any)']='trabajo/centros';
+
+$route['mensajes'] = 'trabajo/mensajes';
+$route['mensajes/(:any)']='trabajo/mensajes';
+$route['mensajes/(:any)/(:any)']='trabajo/mensajes';
+
+$route['trabajos'] = 'trabajo/trabajos';
+$route['trabajos/(:any)']='trabajo/trabajos';
+$route['trabajos/(:any)/(:any)']='trabajo/trabajos';
+
+$route['usuarios'] = 'trabajo/usuarios';
+$route['usuarios/(:any)']='trabajo/usuarios';
+$route['usuarios/(:any)/(:any)']='trabajo/usuarios';
+$route['calendario'] = 'trabajo/calendario';
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
